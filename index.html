@@ -2,65 +2,26 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>
-    PinkTrophy | Textile Sourcing & Manufacturing in Portugal and Morocco
-  </title>
+  <title>PinkTrophy | Global Sourcing & Manufacturing Partner</title>
 
   <meta
     name="description"
-    content="PinkTrophy is a textile sourcing and manufacturing partner connecting European businesses with production in Portugal and Morocco. Product development, fabrics, manufacturing, quality control and delivery."
-  >
-
-  <meta
-    name="keywords"
-    content="textile sourcing Portugal, clothing manufacturer Portugal, garment manufacturer Morocco, fashion production Portugal, uniform manufacturer Europe, textile production Europe, nearshore garment manufacturing"
-  >
-
-  <meta name="robots" content="index, follow">
-
-  <link
-    rel="canonical"
-    href="https://pinktrophy.com/"
-  >
-
-  <meta
-    property="og:title"
-    content="PinkTrophy | Textile Sourcing & Manufacturing"
-  >
-
-  <meta
-    property="og:description"
-    content="From concept to production. Textile sourcing, product development and manufacturing in Portugal and Morocco."
-  >
-
-  <meta
-    property="og:type"
-    content="website"
-  >
-
-  <meta
-    property="og:url"
-    content="https://pinktrophy.com/"
+    content="PinkTrophy is a sourcing and manufacturing partner for fashion, uniforms and professional apparel, connecting European businesses with production in Portugal and Morocco."
   >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Italiana&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
     rel="stylesheet"
   >
 
   <link rel="stylesheet" href="styles.css">
-
 </head>
-
 
 <body>
 
@@ -69,153 +30,73 @@
      HEADER
 ===================================================== -->
 
-<header class="topbar">
+<header class="header">
 
-  <a
-    href="#home"
-    class="brand"
-    aria-label="PinkTrophy home"
-  >
-
-    <img
-      src="logo.png"
-      alt="PinkTrophy"
-      class="brand-logo"
-    >
-
+  <a href="#home" class="logo-wrap">
+    <img src="logo.png" alt="PinkTrophy Global Sourcing Partner">
   </a>
 
+  <nav id="nav">
 
-  <nav
-    class="nav"
-    id="nav"
-    aria-label="Main navigation"
-  >
-
-    <a
-      href="#home"
-      data-en="Home"
-      data-pt="Início"
-      data-es="Inicio"
-      data-fr="Accueil"
-    >
+    <a href="#home"
+       data-en="Home"
+       data-pt="Início">
       Home
     </a>
 
-    <a
-      href="#about"
-      data-en="About"
-      data-pt="Sobre"
-      data-es="Sobre nosotros"
-      data-fr="À propos"
-    >
+    <a href="#about"
+       data-en="About"
+       data-pt="Sobre">
       About
     </a>
 
-    <a
-      href="#services"
-      data-en="Services"
-      data-pt="Serviços"
-      data-es="Servicios"
-      data-fr="Services"
-    >
+    <a href="#services"
+       data-en="Services"
+       data-pt="Serviços">
       Services
     </a>
 
-    <a
-      href="#work"
-      data-en="Selected Work"
-      data-pt="Projetos"
-      data-es="Proyectos"
-      data-fr="Projets"
-    >
+    <a href="#work"
+       data-en="Selected Work"
+       data-pt="Projetos">
       Selected Work
     </a>
 
-    <a
-      href="#sectors"
-      data-en="Sectors"
-      data-pt="Setores"
-      data-es="Sectores"
-      data-fr="Secteurs"
-    >
+    <a href="#sectors"
+       data-en="Sectors"
+       data-pt="Setores">
       Sectors
     </a>
 
-    <a
-      href="#contact"
-      data-en="Contact"
-      data-pt="Contacto"
-      data-es="Contacto"
-      data-fr="Contact"
-    >
+    <a href="#contact"
+       data-en="Contact"
+       data-pt="Contacto">
       Contact
     </a>
 
   </nav>
 
+  <div class="header-actions">
 
-  <div class="top-actions">
-
-    <div
-      class="language-switcher"
-      aria-label="Language selector"
+    <button
+      class="language"
+      id="languageButton"
+      type="button"
+      aria-label="Change language"
     >
-
-      <button
-        type="button"
-        class="lang-btn active"
-        data-lang="en"
-      >
-        EN
-      </button>
-
-      <span>·</span>
-
-      <button
-        type="button"
-        class="lang-btn"
-        data-lang="pt"
-      >
-        PT
-      </button>
-
-      <span>·</span>
-
-      <button
-        type="button"
-        class="lang-btn"
-        data-lang="es"
-      >
-        ES
-      </button>
-
-      <span>·</span>
-
-      <button
-        type="button"
-        class="lang-btn"
-        data-lang="fr"
-      >
-        FR
-      </button>
-
-    </div>
-
+      PT
+    </button>
 
     <a
       href="#contact"
       class="top-cta"
       data-en="GET IN TOUCH"
       data-pt="CONTACTE-NOS"
-      data-es="CONTÁCTENOS"
-      data-fr="CONTACTEZ-NOUS"
     >
       GET IN TOUCH
     </a>
 
   </div>
-
 
   <button
     class="menu"
@@ -223,10 +104,7 @@
     type="button"
     aria-label="Open menu"
   >
-
-    <span></span>
-    <span></span>
-
+    ☰
   </button>
 
 </header>
@@ -240,109 +118,85 @@
      HERO
 ===================================================== -->
 
-<section
-  class="hero"
-  id="home"
->
+<section class="hero" id="home">
 
   <div class="hero-copy">
 
-    <div
-      class="eyebrow"
+    <p
+      class="kicker"
       data-en="GLOBAL SOURCING · PORTUGAL + MOROCCO"
       data-pt="SOURCING GLOBAL · PORTUGAL + MARROCOS"
-      data-es="SOURCING GLOBAL · PORTUGAL + MARRUECOS"
-      data-fr="SOURCING GLOBAL · PORTUGAL + MAROC"
     >
       GLOBAL SOURCING · PORTUGAL + MOROCCO
-    </div>
-
+    </p>
 
     <h1>
-
       <span
         data-en="From concept to production."
         data-pt="Do conceito à produção."
-        data-es="Del concepto a la producción."
-        data-fr="Du concept à la production."
       >
         From concept to production.
       </span>
 
+      <br>
+
       <em
         data-en="Made for your brand."
-        data-pt="Feito para a sua marca."
-        data-es="Creado para su marca."
-        data-fr="Conçu pour votre marque."
+        data-pt="Criado para a sua marca."
       >
         Made for your brand.
       </em>
-
     </h1>
-
 
     <p
       class="hero-text"
       data-en="A sourcing and manufacturing partner for fashion, uniforms and professional apparel — connecting European businesses with flexible nearshore production in Portugal and Morocco."
-      data-pt="Um parceiro de sourcing e produção para moda, uniformes e vestuário profissional — ligando empresas europeias a produção nearshore flexível em Portugal e Marrocos."
-      data-es="Un socio de sourcing y producción para moda, uniformes y vestuario profesional — conectando empresas europeas con una producción nearshore flexible en Portugal y Marruecos."
-      data-fr="Un partenaire de sourcing et de production pour la mode, les uniformes et les vêtements professionnels — reliant les entreprises européennes à une production nearshore flexible au Portugal et au Maroc."
+      data-pt="Um parceiro de sourcing e produção para moda, uniformes e vestuário profissional — ligando empresas europeias a uma produção nearshore flexível em Portugal e Marrocos."
     >
-      A sourcing and manufacturing partner for fashion, uniforms and professional apparel — connecting European businesses with flexible nearshore production in Portugal and Morocco.
+      A sourcing and manufacturing partner for fashion, uniforms and
+      professional apparel — connecting European businesses with flexible
+      nearshore production in Portugal and Morocco.
     </p>
-
 
     <a
       href="#services"
-      class="primary-button"
+      class="orange-button"
       data-en="DISCOVER OUR SERVICES →"
       data-pt="CONHEÇA OS NOSSOS SERVIÇOS →"
-      data-es="DESCUBRA NUESTROS SERVICIOS →"
-      data-fr="DÉCOUVREZ NOS SERVICES →"
     >
       DISCOVER OUR SERVICES →
     </a>
 
-
-    <div class="hero-metrics">
+    <div class="hero-values">
 
       <div>
-        <strong>01</strong>
-
-        <span
+        <span class="value-icon">◇</span>
+        <p
           data-en="PRODUCT DEVELOPMENT"
-          data-pt="DESENVOLVIMENTO DE PRODUTO"
-          data-es="DESARROLLO DE PRODUCTO"
-          data-fr="DÉVELOPPEMENT PRODUIT"
+          data-pt="DESENVOLVIMENTO"
         >
           PRODUCT DEVELOPMENT
-        </span>
+        </p>
       </div>
 
       <div>
-        <strong>02</strong>
-
-        <span
+        <span class="value-icon">◎</span>
+        <p
           data-en="FLEXIBLE PRODUCTION"
           data-pt="PRODUÇÃO FLEXÍVEL"
-          data-es="PRODUCCIÓN FLEXIBLE"
-          data-fr="PRODUCTION FLEXIBLE"
         >
           FLEXIBLE PRODUCTION
-        </span>
+        </p>
       </div>
 
       <div>
-        <strong>03</strong>
-
-        <span
+        <span class="value-icon">○</span>
+        <p
           data-en="EUROPEAN NEARSHORE"
           data-pt="NEARSHORE EUROPEU"
-          data-es="NEARSHORE EUROPEO"
-          data-fr="NEARSHORE EUROPÉEN"
         >
           EUROPEAN NEARSHORE
-        </span>
+        </p>
       </div>
 
     </div>
@@ -352,63 +206,56 @@
 
   <div class="hero-visual">
 
-    <img
-      src="pinktrophy-uniforms-studio.png"
-      alt="PinkTrophy uniform development and textile sourcing studio"
-      class="hero-image"
-    >
+    <div class="hero-photo">
 
-    <div class="hero-card">
-
-      <span
-        data-en="DEVELOPMENT"
-        data-pt="DESENVOLVIMENTO"
-        data-es="DESARROLLO"
-        data-fr="DÉVELOPPEMENT"
+      <img
+        src="pinktrophy-uniforms-studio.png"
+        alt="PinkTrophy textile development and professional apparel"
       >
-        DEVELOPMENT
-      </span>
 
-      <span
-        data-en="PRODUCTION"
-        data-pt="PRODUÇÃO"
-        data-es="PRODUCCIÓN"
-        data-fr="PRODUCTION"
-      >
-        PRODUCTION
-      </span>
+      <div class="hero-photo-label">
+        <span
+          data-en="DEVELOPMENT"
+          data-pt="DESENVOLVIMENTO"
+        >
+          DEVELOPMENT
+        </span>
 
-      <span
-        data-en="DELIVERY"
-        data-pt="ENTREGA"
-        data-es="ENTREGA"
-        data-fr="LIVRAISON"
+        <span>·</span>
+
+        <span
+          data-en="PRODUCTION"
+          data-pt="PRODUÇÃO"
+        >
+          PRODUCTION
+        </span>
+
+        <span>·</span>
+
+        <span
+          data-en="DELIVERY"
+          data-pt="ENTREGA"
+        >
+          DELIVERY
+        </span>
+      </div>
+
+    </div>
+
+    <div class="hero-caption">
+
+      <span>01</span>
+
+      <p
+        data-en="One sourcing partner from first brief to final delivery."
+        data-pt="Um parceiro de sourcing desde o primeiro briefing até à entrega final."
       >
-        DELIVERY
-      </span>
+        One sourcing partner from first brief to final delivery.
+      </p>
 
     </div>
 
   </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     INTRO STRIP
-===================================================== -->
-
-<section class="intro-strip">
-
-  <p
-    data-en="One sourcing partner from first brief to final delivery."
-    data-pt="Um único parceiro de sourcing desde o primeiro briefing até à entrega final."
-    data-es="Un único socio de sourcing desde el primer briefing hasta la entrega final."
-    data-fr="Un seul partenaire de sourcing, du premier brief à la livraison finale."
-  >
-    One sourcing partner from first brief to final delivery.
-  </p>
 
 </section>
 
@@ -418,41 +265,32 @@
      SERVICES
 ===================================================== -->
 
-<section
-  class="section services-section"
-  id="services"
->
+<section class="section services-section" id="services">
 
   <div class="section-heading">
 
-    <div
-      class="eyebrow"
+    <p
+      class="kicker"
       data-en="WHAT WE DO"
       data-pt="O QUE FAZEMOS"
-      data-es="LO QUE HACEMOS"
-      data-fr="CE QUE NOUS FAISONS"
     >
       WHAT WE DO
-    </div>
-
+    </p>
 
     <h2
       data-en="From idea to finished product."
       data-pt="Da ideia ao produto final."
-      data-es="De la idea al producto terminado."
-      data-fr="De l’idée au produit fini."
     >
       From idea to finished product.
     </h2>
 
-
     <p
+      class="section-intro"
       data-en="We coordinate the complete textile journey — from product development and sourcing to manufacturing, quality control and final delivery."
       data-pt="Coordenamos todo o percurso têxtil — desde o desenvolvimento de produto e sourcing até à produção, controlo de qualidade e entrega final."
-      data-es="Coordinamos todo el proceso textil — desde el desarrollo de producto y el sourcing hasta la producción, el control de calidad y la entrega final."
-      data-fr="Nous coordonnons l’ensemble du parcours textile — du développement produit et du sourcing à la fabrication, au contrôle qualité et à la livraison finale."
     >
-      We coordinate the complete textile journey — from product development and sourcing to manufacturing, quality control and final delivery.
+      We coordinate the complete textile journey — from product development
+      and sourcing to manufacturing, quality control and final delivery.
     </p>
 
   </div>
@@ -460,15 +298,22 @@
 
   <div class="services-grid">
 
+
     <article class="service-card">
 
-      <span>01</span>
+      <div class="service-image">
+        <img
+          src="cad-studio.webp"
+          alt="Fashion and garment product development"
+          loading="lazy"
+        >
+      </div>
+
+      <span class="card-number">01</span>
 
       <h3
         data-en="Design & Development"
         data-pt="Design & Desenvolvimento"
-        data-es="Diseño y Desarrollo"
-        data-fr="Design & Développement"
       >
         Design & Development
       </h3>
@@ -476,10 +321,9 @@
       <p
         data-en="From initial concepts to technical development, modelling, prototypes and samples."
         data-pt="Dos conceitos iniciais ao desenvolvimento técnico, modelagem, protótipos e amostras."
-        data-es="Desde los conceptos iniciales hasta el desarrollo técnico, el patronaje, los prototipos y las muestras."
-        data-fr="Des concepts initiaux au développement technique, au modélisme, aux prototypes et aux échantillons."
       >
-        From initial concepts to technical development, modelling, prototypes and samples.
+        From initial concepts to technical development, modelling,
+        prototypes and samples.
       </p>
 
     </article>
@@ -487,24 +331,29 @@
 
     <article class="service-card">
 
-      <span>02</span>
+      <div class="service-image">
+        <img
+          src="component-development.webp"
+          alt="Fabric and component sourcing"
+          loading="lazy"
+        >
+      </div>
+
+      <span class="card-number">02</span>
 
       <h3
         data-en="Material Sourcing"
         data-pt="Sourcing de Materiais"
-        data-es="Sourcing de Materiales"
-        data-fr="Sourcing de Matières"
       >
         Material Sourcing
       </h3>
 
       <p
         data-en="Fabrics, trims and components selected around the design, performance and commercial requirements of each project."
-        data-pt="Tecidos, aviamentos e componentes selecionados de acordo com os requisitos de design, desempenho e comerciais de cada projeto."
-        data-es="Tejidos, fornituras y componentes seleccionados según los requisitos de diseño, rendimiento y comerciales de cada proyecto."
-        data-fr="Tissus, fournitures et composants sélectionnés selon les exigences de design, de performance et commerciales de chaque projet."
+        data-pt="Tecidos, acessórios e componentes selecionados de acordo com os requisitos de design, desempenho e comerciais de cada projeto."
       >
-        Fabrics, trims and components selected around the design, performance and commercial requirements of each project.
+        Fabrics, trims and components selected around the design,
+        performance and commercial requirements of each project.
       </p>
 
     </article>
@@ -512,13 +361,19 @@
 
     <article class="service-card">
 
-      <span>03</span>
+      <div class="service-image">
+        <img
+          src="automatic-cutting.webp"
+          alt="Textile cutting and manufacturing"
+          loading="lazy"
+        >
+      </div>
+
+      <span class="card-number">03</span>
 
       <h3
         data-en="Manufacturing"
         data-pt="Produção"
-        data-es="Producción"
-        data-fr="Fabrication"
       >
         Manufacturing
       </h3>
@@ -526,10 +381,9 @@
       <p
         data-en="Flexible manufacturing coordinated through our production network in Portugal and Morocco."
         data-pt="Produção flexível coordenada através da nossa rede de produção em Portugal e Marrocos."
-        data-es="Producción flexible coordinada a través de nuestra red de producción en Portugal y Marruecos."
-        data-fr="Fabrication flexible coordonnée grâce à notre réseau de production au Portugal et au Maroc."
       >
-        Flexible manufacturing coordinated through our production network in Portugal and Morocco.
+        Flexible manufacturing coordinated through our production network
+        in Portugal and Morocco.
       </p>
 
     </article>
@@ -537,24 +391,29 @@
 
     <article class="service-card">
 
-      <span>04</span>
+      <div class="service-image">
+        <img
+          src="garment-construction.webp"
+          alt="Garment construction and quality"
+          loading="lazy"
+        >
+      </div>
+
+      <span class="card-number">04</span>
 
       <h3
         data-en="Quality & Finishing"
         data-pt="Qualidade & Acabamentos"
-        data-es="Calidad y Acabados"
-        data-fr="Qualité & Finitions"
       >
         Quality & Finishing
       </h3>
 
       <p
         data-en="Close production follow-up, finishing and quality control throughout the manufacturing process."
-        data-pt="Acompanhamento próximo da produção, acabamentos e controlo de qualidade durante todo o processo de fabrico."
-        data-es="Seguimiento cercano de la producción, acabados y control de calidad durante todo el proceso de fabricación."
-        data-fr="Suivi étroit de la production, finitions et contrôle qualité tout au long du processus de fabrication."
+        data-pt="Acompanhamento próximo da produção, acabamentos e controlo de qualidade ao longo de todo o processo."
       >
-        Close production follow-up, finishing and quality control throughout the manufacturing process.
+        Close production follow-up, finishing and quality control throughout
+        the manufacturing process.
       </p>
 
     </article>
@@ -562,27 +421,33 @@
 
     <article class="service-card">
 
-      <span>05</span>
+      <div class="service-image">
+        <img
+          src="coats-finishing.webp"
+          alt="Finished garment preparation"
+          loading="lazy"
+        >
+      </div>
+
+      <span class="card-number">05</span>
 
       <h3
         data-en="Logistics & Delivery"
         data-pt="Logística & Entrega"
-        data-es="Logística y Entrega"
-        data-fr="Logistique & Livraison"
       >
         Logistics & Delivery
       </h3>
 
       <p
         data-en="Packing, shipment preparation and logistics coordination through to final delivery."
-        data-pt="Embalamento, preparação de envios e coordenação logística até à entrega final."
-        data-es="Embalaje, preparación de expediciones y coordinación logística hasta la entrega final."
-        data-fr="Emballage, préparation des expéditions et coordination logistique jusqu’à la livraison finale."
+        data-pt="Embalagem, preparação da expedição e coordenação logística até à entrega final."
       >
-        Packing, shipment preparation and logistics coordination through to final delivery.
+        Packing, shipment preparation and logistics coordination through
+        to final delivery.
       </p>
 
     </article>
+
 
   </div>
 
@@ -591,29 +456,26 @@
 
 
 <!-- =====================================================
-     WHY PINKTROPHY
+     POSITIONING STATEMENT
 ===================================================== -->
 
 <section class="statement-section">
 
-  <div class="statement-heading">
+  <div class="statement-number">02</div>
 
-    <div
-      class="eyebrow"
+  <div>
+
+    <p
+      class="kicker"
       data-en="WHY PINKTROPHY"
       data-pt="PORQUÊ A PINKTROPHY"
-      data-es="POR QUÉ PINKTROPHY"
-      data-fr="POURQUOI PINKTROPHY"
     >
       WHY PINKTROPHY
-    </div>
-
+    </p>
 
     <h2
       data-en="Closer production.<br><em>Greater control.</em>"
       data-pt="Produção mais próxima.<br><em>Maior controlo.</em>"
-      data-es="Producción más cercana.<br><em>Mayor control.</em>"
-      data-fr="Une production plus proche.<br><em>Un meilleur contrôle.</em>"
     >
       Closer production.<br>
       <em>Greater control.</em>
@@ -621,15 +483,14 @@
 
   </div>
 
-
   <p
     class="statement-copy"
     data-en="Our production network in Portugal and Morocco offers European businesses a flexible nearshore alternative, combining product expertise, close communication, production follow-up and one point of contact."
     data-pt="A nossa rede de produção em Portugal e Marrocos oferece às empresas europeias uma alternativa nearshore flexível, combinando conhecimento de produto, comunicação próxima, acompanhamento da produção e um único ponto de contacto."
-    data-es="Nuestra red de producción en Portugal y Marruecos ofrece a las empresas europeas una alternativa nearshore flexible, combinando experiencia de producto, comunicación cercana, seguimiento de la producción y un único punto de contacto."
-    data-fr="Notre réseau de production au Portugal et au Maroc offre aux entreprises européennes une alternative nearshore flexible, combinant expertise produit, communication étroite, suivi de production et interlocuteur unique."
   >
-    Our production network in Portugal and Morocco offers European businesses a flexible nearshore alternative, combining product expertise, close communication, production follow-up and one point of contact.
+    Our production network in Portugal and Morocco offers European
+    businesses a flexible nearshore alternative, combining product expertise,
+    close communication, production follow-up and one point of contact.
   </p>
 
 </section>
@@ -640,29 +501,21 @@
      SELECTED WORK
 ===================================================== -->
 
-<section
-  class="section work-section"
-  id="work"
->
+<section class="section work-section" id="work">
 
   <div class="section-heading">
 
-    <div
-      class="eyebrow"
+    <p
+      class="kicker"
       data-en="SELECTED WORK"
       data-pt="PROJETOS SELECIONADOS"
-      data-es="PROYECTOS SELECCIONADOS"
-      data-fr="PROJETS SÉLECTIONNÉS"
     >
       SELECTED WORK
-    </div>
-
+    </p>
 
     <h2
       data-en="Product expertise.<br>Across different applications."
       data-pt="Experiência de produto.<br>Em diferentes aplicações."
-      data-es="Experiencia de producto.<br>En diferentes aplicaciones."
-      data-fr="Expertise produit.<br>Pour différentes applications."
     >
       Product expertise.<br>
       Across different applications.
@@ -674,30 +527,18 @@
   <div class="work-grid">
 
 
-    <!-- 01 CORPORATE UNIFORMS -->
-
     <article class="work-card">
 
-      <div class="work-image people-image">
-
-        <img
-          src="uniforms-airport.webp"
-          alt="Corporate and professional uniform project"
-          loading="lazy"
-        >
-
-        <div
-          class="made-in-portugal"
-          data-en="Clothing shown is produced in Portugal."
-          data-pt="O vestuário apresentado é produzido em Portugal."
-          data-es="Las prendas mostradas se producen en Portugal."
-          data-fr="Les vêtements présentés sont produits au Portugal."
-        >
-          Clothing shown is produced in Portugal.
-        </div>
-
-      </div>
-
+<div class="work-image people-image">
+    <img
+        src="uniforms-airport.webp"
+        alt="Corporate and professional uniform project"
+        loading="lazy"
+    >
+    <div class="made-in-portugal">
+        Clothing shown is produced in Portugal.
+    </div>
+</div>
 
       <div class="work-meta">
 
@@ -708,8 +549,6 @@
           <h3
             data-en="Corporate Uniforms"
             data-pt="Uniformes Corporativos"
-            data-es="Uniformes Corporativos"
-            data-fr="Uniformes d’Entreprise"
           >
             Corporate Uniforms
           </h3>
@@ -717,10 +556,9 @@
           <p
             data-en="Professional apparel developed around brand identity, comfort and operational requirements."
             data-pt="Vestuário profissional desenvolvido em torno da identidade da marca, conforto e requisitos operacionais."
-            data-es="Vestuario profesional desarrollado en torno a la identidad de marca, el confort y los requisitos operativos."
-            data-fr="Vêtements professionnels développés autour de l’identité de marque, du confort et des exigences opérationnelles."
           >
-            Professional apparel developed around brand identity, comfort and operational requirements.
+            Professional apparel developed around brand identity, comfort
+            and operational requirements.
           </p>
 
         </div>
@@ -730,31 +568,19 @@
     </article>
 
 
-
-    <!-- 02 PROFESSIONAL APPAREL -->
-
     <article class="work-card">
 
       <div class="work-image people-image">
+  <img
+    src="workwear-retail.webp"
+    alt="Professional workwear"
+    loading="lazy"
+  >
 
-        <img
-          src="workwear-retail.webp"
-          alt="Professional workwear"
-          loading="lazy"
-        >
-
-        <div
-          class="made-in-portugal"
-          data-en="Clothing shown is produced in Portugal."
-          data-pt="O vestuário apresentado é produzido em Portugal."
-          data-es="Las prendas mostradas se producen en Portugal."
-          data-fr="Les vêtements présentés sont produits au Portugal."
-        >
-          Clothing shown is produced in Portugal.
-        </div>
-
-      </div>
-
+  <div class="made-in-portugal">
+    Clothing shown is produced in Portugal.
+  </div>
+</div>
 
       <div class="work-meta">
 
@@ -765,19 +591,16 @@
           <h3
             data-en="Professional Apparel"
             data-pt="Vestuário Profissional"
-            data-es="Vestuario Profesional"
-            data-fr="Vêtements Professionnels"
           >
             Professional Apparel
           </h3>
 
           <p
             data-en="Functional garment solutions for customer-facing and operational environments."
-            data-pt="Soluções de vestuário funcional para ambientes de contacto com o cliente e operações."
-            data-es="Soluciones de vestuario funcional para entornos de atención al cliente y operaciones."
-            data-fr="Solutions vestimentaires fonctionnelles pour les environnements d’accueil client et opérationnels."
+            data-pt="Soluções de vestuário funcionais para ambientes de atendimento ao público e operações."
           >
-            Functional garment solutions for customer-facing and operational environments.
+            Functional garment solutions for customer-facing and
+            operational environments.
           </p>
 
         </div>
@@ -787,31 +610,19 @@
     </article>
 
 
-
-    <!-- 03 OUTERWEAR & FASHION -->
-
     <article class="work-card">
 
       <div class="work-image people-image">
+    <img
+        src="outerwear-fashion-models.jpg"
+        alt="Contemporary outerwear and fashion collection"
+        loading="lazy"
+    >
 
-        <img
-          src="outerwear-fashion-models.jpg"
-          alt="Contemporary outerwear and fashion collection"
-          loading="lazy"
-        >
-
-        <div
-          class="made-in-portugal"
-          data-en="Clothing shown is produced in Portugal."
-          data-pt="O vestuário apresentado é produzido em Portugal."
-          data-es="Las prendas mostradas se producen en Portugal."
-          data-fr="Les vêtements présentés sont produits au Portugal."
-        >
-          Clothing shown is produced in Portugal.
-        </div>
-
-      </div>
-
+    <div class="made-in-portugal">
+        Clothing shown is produced in Portugal.
+    </div>
+</div>
 
       <div class="work-meta">
 
@@ -822,8 +633,6 @@
           <h3
             data-en="Outerwear & Fashion"
             data-pt="Outerwear & Moda"
-            data-es="Abrigos y Moda"
-            data-fr="Manteaux & Mode"
           >
             Outerwear & Fashion
           </h3>
@@ -831,10 +640,9 @@
           <p
             data-en="Garment development and production from first sample through to finished product."
             data-pt="Desenvolvimento e produção de vestuário desde a primeira amostra até ao produto final."
-            data-es="Desarrollo y producción de prendas desde la primera muestra hasta el producto terminado."
-            data-fr="Développement et production de vêtements, du premier échantillon au produit fini."
           >
-            Garment development and production from first sample through to finished product.
+            Garment development and production from first sample through
+            to finished product.
           </p>
 
         </div>
@@ -844,22 +652,15 @@
     </article>
 
 
-
-    <!-- 04 PRODUCTION & FINISHING -->
-
     <article class="work-card">
 
       <div class="work-image">
-
-        <img
-          src="production-finishing.png"
-          alt="Garment production and finishing details"
-          loading="lazy"
-        >
-
-      </div>
-
-
+    <img
+        src="production-finishing.png"
+        alt="Garment production and finishing details"
+        loading="lazy"
+    >
+</div>
       <div class="work-meta">
 
         <span>04</span>
@@ -869,8 +670,6 @@
           <h3
             data-en="Production & Finishing"
             data-pt="Produção & Acabamentos"
-            data-es="Producción y Acabados"
-            data-fr="Production & Finitions"
           >
             Production & Finishing
           </h3>
@@ -878,10 +677,9 @@
           <p
             data-en="Coordinated production and finishing with attention to construction, consistency and detail."
             data-pt="Produção e acabamentos coordenados com atenção à construção, consistência e detalhe."
-            data-es="Producción y acabados coordinados con atención a la confección, la consistencia y el detalle."
-            data-fr="Production et finitions coordonnées avec une attention particulière à la construction, à la régularité et aux détails."
           >
-            Coordinated production and finishing with attention to construction, consistency and detail.
+            Coordinated production and finishing with attention to
+            construction, consistency and detail.
           </p>
 
         </div>
@@ -890,17 +688,18 @@
 
     </article>
 
+
   </div>
 
 
   <p
-    class="work-note"
+    class="project-note"
     data-en="Selected images illustrate production and project experience within the sourcing and manufacturing network. Third-party trademarks remain the property of their respective owners."
-    data-pt="As imagens selecionadas ilustram experiência de produção e projetos dentro da rede de sourcing e fabrico. As marcas de terceiros permanecem propriedade dos respetivos titulares."
-    data-es="Las imágenes seleccionadas ilustran la experiencia de producción y de proyectos dentro de la red de sourcing y fabricación. Las marcas de terceros siguen siendo propiedad de sus respectivos titulares."
-    data-fr="Les images sélectionnées illustrent l’expérience de production et de projets au sein du réseau de sourcing et de fabrication. Les marques de tiers restent la propriété de leurs détenteurs respectifs."
+    data-pt="As imagens selecionadas ilustram experiência de produção e projetos da rede de sourcing e fabrico. As marcas de terceiros permanecem propriedade dos respetivos titulares."
   >
-    Selected images illustrate production and project experience within the sourcing and manufacturing network. Third-party trademarks remain the property of their respective owners.
+    Selected images illustrate production and project experience within
+    the sourcing and manufacturing network. Third-party trademarks remain
+    the property of their respective owners.
   </p>
 
 </section>
@@ -911,52 +710,41 @@
      ABOUT
 ===================================================== -->
 
-<section
-  class="section about-section"
-  id="about"
->
+<section class="about" id="about">
 
   <div class="about-copy">
 
-    <div
-      class="eyebrow"
+    <p
+      class="kicker"
       data-en="ABOUT PINKTROPHY"
       data-pt="SOBRE A PINKTROPHY"
-      data-es="SOBRE PINKTROPHY"
-      data-fr="À PROPOS DE PINKTROPHY"
     >
       ABOUT PINKTROPHY
-    </div>
-
+    </p>
 
     <h2
       data-en="More than production.<br><em>A stronger partnership.</em>"
       data-pt="Mais do que produção.<br><em>Uma parceria mais forte.</em>"
-      data-es="Más que producción.<br><em>Una colaboración más sólida.</em>"
-      data-fr="Plus que de la production.<br><em>Un partenariat plus fort.</em>"
     >
       More than production.<br>
       <em>A stronger partnership.</em>
     </h2>
 
-
     <p
       data-en="PinkTrophy connects European businesses with an established production network in Portugal and Morocco. We coordinate fashion, uniform and professional apparel projects from development through final delivery with transparency, flexibility and close communication."
       data-pt="A PinkTrophy liga empresas europeias a uma rede de produção estabelecida em Portugal e Marrocos. Coordenamos projetos de moda, uniformes e vestuário profissional desde o desenvolvimento até à entrega final, com transparência, flexibilidade e comunicação próxima."
-      data-es="PinkTrophy conecta empresas europeas con una red de producción consolidada en Portugal y Marruecos. Coordinamos proyectos de moda, uniformes y vestuario profesional desde el desarrollo hasta la entrega final, con transparencia, flexibilidad y comunicación cercana."
-      data-fr="PinkTrophy relie les entreprises européennes à un réseau de production établi au Portugal et au Maroc. Nous coordonnons des projets de mode, d’uniformes et de vêtements professionnels, du développement à la livraison finale, avec transparence, flexibilité et communication étroite."
     >
-      PinkTrophy connects European businesses with an established production network in Portugal and Morocco. We coordinate fashion, uniform and professional apparel projects from development through final delivery with transparency, flexibility and close communication.
+      PinkTrophy connects European businesses with an established production
+      network in Portugal and Morocco. We coordinate fashion, uniform and
+      professional apparel projects from development through final delivery
+      with transparency, flexibility and close communication.
     </p>
-
 
     <a
       href="#contact"
-      class="text-link"
+      class="orange-button"
       data-en="TALK TO US →"
       data-pt="FALE CONNOSCO →"
-      data-es="HABLE CON NOSOTROS →"
-      data-fr="PARLEZ-NOUS →"
     >
       TALK TO US →
     </a>
@@ -964,17 +752,15 @@
   </div>
 
 
-  <div class="about-panel">
+  <div class="about-facts">
 
-    <div>
+    <div class="fact">
 
       <strong>PT + MA</strong>
 
       <span
         data-en="Nearshore production network"
         data-pt="Rede de produção nearshore"
-        data-es="Red de producción nearshore"
-        data-fr="Réseau de production nearshore"
       >
         Nearshore production network
       </span>
@@ -982,15 +768,13 @@
     </div>
 
 
-    <div>
+    <div class="fact">
 
       <strong>360°</strong>
 
       <span
         data-en="Project coordination"
-        data-pt="Coordenação de projeto"
-        data-es="Coordinación de proyectos"
-        data-fr="Coordination de projet"
+        data-pt="Coordenação do projeto"
       >
         Project coordination
       </span>
@@ -998,21 +782,25 @@
     </div>
 
 
-    <div>
+    <div class="fact">
 
       <strong>1</strong>
 
       <span
         data-en="Point of contact"
         data-pt="Ponto de contacto"
-        data-es="Punto de contacto"
-        data-fr="Interlocuteur unique"
       >
         Point of contact
       </span>
 
     </div>
 
+  </div>
+
+
+  <div class="signature">
+    Textiles<br>
+    <em>with purpose</em>
   </div>
 
 </section>
@@ -1023,29 +811,21 @@
      SECTORS
 ===================================================== -->
 
-<section
-  class="section sectors-section"
-  id="sectors"
->
+<section class="industries-section" id="sectors">
 
-  <div class="section-heading">
+  <div class="sectors-heading">
 
-    <div
-      class="eyebrow"
+    <p
+      class="kicker"
       data-en="SECTORS WE SERVE"
-      data-pt="SETORES QUE SERVIMOS"
-      data-es="SECTORES EN LOS QUE TRABAJAMOS"
-      data-fr="SECTEURS QUE NOUS SERVONS"
+      data-pt="SETORES EM QUE TRABALHAMOS"
     >
       SECTORS WE SERVE
-    </div>
-
+    </p>
 
     <h2
       data-en="Expertise across fashion,<br>uniforms and professional apparel."
       data-pt="Experiência em moda,<br>uniformes e vestuário profissional."
-      data-es="Experiencia en moda,<br>uniformes y vestuario profesional."
-      data-fr="Expertise en mode,<br>uniformes et vêtements professionnels."
     >
       Expertise across fashion,<br>
       uniforms and professional apparel.
@@ -1064,8 +844,6 @@
       <h3
         data-en="Fashion & Apparel"
         data-pt="Moda & Vestuário"
-        data-es="Moda y Confección"
-        data-fr="Mode & Habillement"
       >
         Fashion & Apparel
       </h3>
@@ -1073,8 +851,6 @@
       <p
         data-en="Collection development, outerwear, tailoring and garment production."
         data-pt="Desenvolvimento de coleções, outerwear, alfaiataria e produção de vestuário."
-        data-es="Desarrollo de colecciones, prendas de abrigo, sastrería y producción de prendas."
-        data-fr="Développement de collections, vêtements d’extérieur, confection et production de vêtements."
       >
         Collection development, outerwear, tailoring and garment production.
       </p>
@@ -1089,19 +865,16 @@
       <h3
         data-en="Corporate & Uniforms"
         data-pt="Corporativo & Uniformes"
-        data-es="Corporativo y Uniformes"
-        data-fr="Corporate & Uniformes"
       >
         Corporate & Uniforms
       </h3>
 
       <p
         data-en="Branded uniforms and corporate apparel developed around each client's identity and operational requirements."
-        data-pt="Uniformes e vestuário corporativo desenvolvidos em torno da identidade e requisitos operacionais de cada cliente."
-        data-es="Uniformes y vestuario corporativo desarrollados en torno a la identidad y los requisitos operativos de cada cliente."
-        data-fr="Uniformes et vêtements corporate développés autour de l’identité et des exigences opérationnelles de chaque client."
+        data-pt="Uniformes e vestuário corporativo desenvolvidos de acordo com a identidade e as necessidades operacionais de cada cliente."
       >
-        Branded uniforms and corporate apparel developed around each client's identity and operational requirements.
+        Branded uniforms and corporate apparel developed around each
+        client's identity and operational requirements.
       </p>
 
     </article>
@@ -1114,8 +887,6 @@
       <h3
         data-en="Aviation & Transport"
         data-pt="Aviação & Transportes"
-        data-es="Aviación y Transporte"
-        data-fr="Aviation & Transport"
       >
         Aviation & Transport
       </h3>
@@ -1123,10 +894,9 @@
       <p
         data-en="Professional uniforms combining brand identity, functionality, comfort and durability."
         data-pt="Uniformes profissionais que combinam identidade de marca, funcionalidade, conforto e durabilidade."
-        data-es="Uniformes profesionales que combinan identidad de marca, funcionalidad, confort y durabilidad."
-        data-fr="Uniformes professionnels associant identité de marque, fonctionnalité, confort et durabilité."
       >
-        Professional uniforms combining brand identity, functionality, comfort and durability.
+        Professional uniforms combining brand identity, functionality,
+        comfort and durability.
       </p>
 
     </article>
@@ -1139,17 +909,13 @@
       <h3
         data-en="Retail & Services"
         data-pt="Retalho & Serviços"
-        data-es="Retail y Servicios"
-        data-fr="Retail & Services"
       >
         Retail & Services
       </h3>
 
       <p
         data-en="Workwear and apparel solutions for customer-facing and operational teams."
-        data-pt="Soluções de workwear e vestuário para equipas de contacto com clientes e operações."
-        data-es="Soluciones de ropa de trabajo y vestuario para equipos de atención al cliente y operaciones."
-        data-fr="Solutions de vêtements de travail et d’habillement pour les équipes en contact avec la clientèle et les équipes opérationnelles."
+        data-pt="Soluções de vestuário profissional para equipas de atendimento ao público e operações."
       >
         Workwear and apparel solutions for customer-facing and operational teams.
       </p>
@@ -1164,19 +930,16 @@
       <h3
         data-en="Hospitality"
         data-pt="Hotelaria"
-        data-es="Hostelería"
-        data-fr="Hôtellerie"
       >
         Hospitality
       </h3>
 
       <p
         data-en="Uniform programmes designed to balance aesthetics, comfort and everyday performance."
-        data-pt="Programas de uniformes concebidos para equilibrar estética, conforto e desempenho diário."
-        data-es="Programas de uniformes diseñados para equilibrar estética, confort y rendimiento diario."
-        data-fr="Programmes d’uniformes conçus pour équilibrer esthétique, confort et performance au quotidien."
+        data-pt="Programas de uniformes desenvolvidos para equilibrar estética, conforto e desempenho no dia a dia."
       >
-        Uniform programmes designed to balance aesthetics, comfort and everyday performance.
+        Uniform programmes designed to balance aesthetics, comfort and
+        everyday performance.
       </p>
 
     </article>
@@ -1189,22 +952,20 @@
       <h3
         data-en="Special Projects"
         data-pt="Projetos Especiais"
-        data-es="Proyectos Especiales"
-        data-fr="Projets Spéciaux"
       >
         Special Projects
       </h3>
 
       <p
         data-en="Bespoke sourcing, product development and manufacturing programmes tailored to specific requirements."
-        data-pt="Programas personalizados de sourcing, desenvolvimento de produto e produção adaptados a requisitos específicos."
-        data-es="Programas personalizados de sourcing, desarrollo de producto y fabricación adaptados a requisitos específicos."
-        data-fr="Programmes sur mesure de sourcing, de développement produit et de fabrication adaptés à des exigences spécifiques."
+        data-pt="Sourcing, desenvolvimento de produto e programas de produção personalizados para requisitos específicos."
       >
-        Bespoke sourcing, product development and manufacturing programmes tailored to specific requirements.
+        Bespoke sourcing, product development and manufacturing programmes
+        tailored to specific requirements.
       </p>
 
     </article>
+
 
   </div>
 
@@ -1216,55 +977,39 @@
      CONTACT
 ===================================================== -->
 
-<section
-  class="contact-section"
-  id="contact"
->
+<section class="contact" id="contact">
 
-  <div>
+  <p
+    class="kicker light"
+    data-en="LET'S WORK TOGETHER"
+    data-pt="VAMOS TRABALHAR JUNTOS"
+  >
+    LET'S WORK TOGETHER
+  </p>
 
-    <div
-      class="eyebrow"
-      data-en="LET'S WORK TOGETHER"
-      data-pt="VAMOS TRABALHAR JUNTOS"
-      data-es="TRABAJEMOS JUNTOS"
-      data-fr="TRAVAILLONS ENSEMBLE"
-    >
-      LET'S WORK TOGETHER
-    </div>
+  <h2
+    data-en="Have a project in mind?"
+    data-pt="Tem um projeto em mente?"
+  >
+    Have a project in mind?
+  </h2>
 
-
-    <h2
-      data-en="Have a project in mind?"
-      data-pt="Tem um projeto em mente?"
-      data-es="¿Tiene un proyecto en mente?"
-      data-fr="Vous avez un projet en tête ?"
-    >
-      Have a project in mind?
-    </h2>
-
-
-    <p
-      data-en="Tell us what you are developing. Let's explore how PinkTrophy can support your next fashion, uniform or professional apparel project."
-      data-pt="Conte-nos o que está a desenvolver. Vamos explorar como a PinkTrophy pode apoiar o seu próximo projeto de moda, uniformes ou vestuário profissional."
-      data-es="Cuéntenos qué está desarrollando. Veamos cómo PinkTrophy puede apoyar su próximo proyecto de moda, uniformes o vestuario profesional."
-      data-fr="Parlez-nous de ce que vous développez. Voyons comment PinkTrophy peut accompagner votre prochain projet de mode, d’uniformes ou de vêtements professionnels."
-    >
-      Tell us what you are developing. Let's explore how PinkTrophy can support your next fashion, uniform or professional apparel project.
-    </p>
-
-  </div>
-
+  <p
+    data-en="Tell us what you are developing. Let's explore how PinkTrophy can support your next fashion, uniform or professional apparel project."
+    data-pt="Conte-nos o que está a desenvolver. Vamos explorar como a PinkTrophy pode apoiar o seu próximo projeto de moda, uniformes ou vestuário profissional."
+  >
+    Tell us what you are developing. Let's explore how PinkTrophy can
+    support your next fashion, uniform or professional apparel project.
+  </p>
 
   <a
     href="mailto:geral@pinktrophy.com"
-    class="contact-email"
+    class="contact-button"
   >
-    geral@pinktrophy.com
+    geral@pinktrophy.com →
   </a>
 
 </section>
-
 
 
 </main>
@@ -1279,36 +1024,77 @@
 
   <div class="footer-brand">
 
-    <img
-      src="logo.png"
-      alt="PinkTrophy"
-      class="footer-logo"
-    >
+    <div class="footer-logo-box">
+
+      <img
+        src="logo.png"
+        alt="PinkTrophy"
+      >
+
+    </div>
 
   </div>
 
 
-  <div
-    class="signature"
-    data-en="Textiles<br><em>with purpose</em>"
-    data-pt="Têxteis<br><em>com propósito</em>"
-    data-es="Textiles<br><em>con propósito</em>"
-    data-fr="Textiles<br><em>avec du sens</em>"
-  >
-    Textiles<br>
-    <em>with purpose</em>
-  </div>
+  <nav>
 
-
-  <div class="footer-meta">
-
-    <p
-      data-en="Portugal · Morocco · Europe"
-      data-pt="Portugal · Marrocos · Europa"
-      data-es="Portugal · Marruecos · Europa"
-      data-fr="Portugal · Maroc · Europe"
+    <a
+      href="#home"
+      data-en="Home"
+      data-pt="Início"
     >
-      Portugal · Morocco · Europe
+      Home
+    </a>
+
+    <a
+      href="#about"
+      data-en="About"
+      data-pt="Sobre"
+    >
+      About
+    </a>
+
+    <a
+      href="#services"
+      data-en="Services"
+      data-pt="Serviços"
+    >
+      Services
+    </a>
+
+    <a
+      href="#work"
+      data-en="Selected Work"
+      data-pt="Projetos"
+    >
+      Selected Work
+    </a>
+
+    <a
+      href="#sectors"
+      data-en="Sectors"
+      data-pt="Setores"
+    >
+      Sectors
+    </a>
+
+    <a
+      href="#contact"
+      data-en="Contact"
+      data-pt="Contacto"
+    >
+      Contact
+    </a>
+
+  </nav>
+
+
+  <div class="footer-right">
+
+    <p>Portugal · Morocco · Europe</p>
+
+    <p>
+      geral@pinktrophy.com
     </p>
 
     <p>
@@ -1323,5 +1109,4 @@
 <script src="script.js"></script>
 
 </body>
-
 </html>
