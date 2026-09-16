@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    /* =========================
-       YEAR
-    ========================= */
+    /* =====================================================
+       CURRENT YEAR
+    ===================================================== */
 
     const year = document.getElementById("year");
 
@@ -11,20 +11,24 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* =========================
-       LANGUAGES
+    /* =====================================================
+       LANGUAGE SWITCHER
        EN / PT / ES / FR
-    ========================= */
+    ===================================================== */
 
     const supportedLanguages = ["en", "pt", "es", "fr"];
 
+
     function setLanguage(language) {
 
+        // Fallback to English
         if (!supportedLanguages.includes(language)) {
             language = "en";
         }
 
-        document.querySelectorAll("[data-en]").forEach(element => {
+
+        // Translate all elements containing language data
+        document.querySelectorAll("[data-en]").forEach((element) => {
 
             const translation = element.getAttribute(`data-${language}`);
 
@@ -34,25 +38,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
         });
 
+
+        // Update HTML language attribute
         document.documentElement.lang = language;
 
-        document.querySelectorAll("[data-lang]").forEach(button => {
 
-            if (button.dataset.lang === language) {
-                button.classList.add("active");
-            } else {
-                button.classList.remove("active");
-            }
+        // Update active language button
+        document.querySelectorAll(".lang-btn").forEach((button) => {
+
+            const isActive = button.dataset.lang === language;
+
+            button.classList.toggle("active", isActive);
+
+            button.setAttribute(
+                "aria-pressed",
+                isActive ? "true" : "false"
+            );
 
         });
 
-        localStorage.setItem("pinktrophy-language", language);
+
+        // Remember visitor's language
+        localStorage.setItem(
+            "pinktrophy-language",
+            language
+        );
+
     }
 
 
-    /* Language buttons */
+    /* =====================================================
+       LANGUAGE BUTTON EVENTS
+    ===================================================== */
 
-    document.querySelectorAll("[data-lang]").forEach(button => {
+    document.querySelectorAll(".lang-btn").forEach((button) => {
 
         button.addEventListener("click", () => {
 
@@ -65,31 +84,57 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    /* Load saved language */
+    /* =====================================================
+       LOAD SAVED LANGUAGE
+    ===================================================== */
 
     const savedLanguage =
-        localStorage.getItem("pinktrophy-language") || "en";
+        localStorage.getItem("pinktrophy-language");
 
-    setLanguage(savedLanguage);
+    if (
+        savedLanguage &&
+        supportedLanguages.includes(savedLanguage)
+    ) {
+
+        setLanguage(savedLanguage);
+
+    } else {
+
+        setLanguage("en");
+
+    }
 
 
-    /* =========================
+    /* =====================================================
        MOBILE MENU
-    ========================= */
+    ===================================================== */
 
-    const menuButton = document.getElementById("menuButton");
-    const nav = document.getElementById("nav");
+    const menuButton =
+        document.getElementById("menuButton");
+
+    const nav =
+        document.getElementById("nav");
+
 
     if (menuButton && nav) {
 
         menuButton.addEventListener("click", () => {
+
             nav.classList.toggle("open");
+
+            menuButton.classList.toggle("active");
+
         });
 
-        nav.querySelectorAll("a").forEach(link => {
+
+        nav.querySelectorAll("a").forEach((link) => {
 
             link.addEventListener("click", () => {
+
                 nav.classList.remove("open");
+
+                menuButton.classList.remove("active");
+
             });
 
         });
